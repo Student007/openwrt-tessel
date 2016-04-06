@@ -21,7 +21,6 @@ If you get an error like this (Ubuntu):
 
 ```
 Build dependency: Please install ncurses. (Missing libncurses.so or ncurses.h)
-
 ```
 you are required to install some source dependencies:
 ```
