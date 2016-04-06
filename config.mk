@@ -19,12 +19,14 @@ PACKAGES += kmod-fs-vfat
 PACKAGES += kmod-nls-cp437
 PACKAGES += kmod-nls-utf8
 PACKAGES += kmod-nls-iso8859-1
+PACKAGES += block-mount
 
 # Video (Webcam)
 PACKAGES += kmod-video-core
 PACKAGES += kmod-video-uvc
 PACKAGES += v4l-utils
 PACKAGES += libv4l
+PACKAGES += libjpeg
 
 # Bluetooth
 PACKAGES += kmod-bluetooth
@@ -47,13 +49,11 @@ PACKAGES += ca-certificates
 PACKAGES += kmod-usb-audio
 PACKAGES += kmod-sound-core
 PACKAGES += kmod-sound-i8x0
-PACKAGES += portaudio
 PACKAGES += alsa-lib
 PACKAGES += alsa-utils
 PACKAGES += libbz2
 PACKAGES += ffmpeg
-PACKAGES += lame
-PACKAGES += sox
+PACKAGES += madplay
 
 # JavaScript
 PACKAGES += node
@@ -65,6 +65,9 @@ PACKAGES += python
 # MDNS
 PACKAGES += tessel-mdns
 PACKAGES += mdns-utils
+
+# Hotplug
+PACKAGES += tessel-hotplug
 
 CONFIG_SDK=y
 

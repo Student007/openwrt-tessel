@@ -5,9 +5,9 @@ PKG_VERSION:=0.1
 PKG_RELEASE=$(PKG_SOURCE_VERSION)
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/tessel/v2-samd21.git
+PKG_SOURCE_URL:=https://github.com/tessel/t2-firmware.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE_VERSION:=c20b3ca9a461783842f706866156b2407a652cca
+PKG_SOURCE_VERSION:=723bdf970ca22d342ccf6236a19685a72c4bb12d
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
 include $(INCLUDE_DIR)/package.mk
@@ -18,7 +18,7 @@ define Package/tessel-tools
 endef
 
 define Build/Compile
-	$(call Build/Compile/Default,-C soc) 
+	$(call Build/Compile/Default,-C soc)
 endef
 
 define Package/tessel-tools/install
